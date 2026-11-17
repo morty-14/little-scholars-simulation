@@ -1,0 +1,75 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f7f7;
+    text-align: center;
+    padding: 20px0;
+}
+h2{
+    margin-bottom: 20px;
+}
+
+.animal-container{
+    display: flex;
+    flex-wrap: wrap;
+    
+
+}
+
+.animal-card{
+    background: white;
+    width: 250px;
+    
+    border-radius: 10px;
+    text-align: center;
+}
+
+.animal-card img{
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: #fb0000; 
+}
+
+.close-btn:hover {
+  color: rgb(116, 0, 0);
+}
+
+/*.slider-container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.slider-image{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0.2);
+}
+
+.arrow-btn{
+    background: #ffffff;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.arrow-btn:hover{
+    background: #f0f0f0;
+}

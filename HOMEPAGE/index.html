@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Little Scholars</title>
+  <link rel="stylesheet" href="homepage_style.css" />
+
+  <!-- Favicon Logo -->
+  <link rel="icon" href="./favicon/favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+  <link rel="manifest" href="./favicon/site.webmanifest">
+</head>
+<body>
+  <div class="container">
+
+    <!-- Website Logo -->
+    <img src="./favicon/earth-mascot.png" alt="Little Scholars" class="logo" />
+
+    <h1 id="welcome-text">Hello there, what are we doing today?⭐</h1>
+    <h2 id="category-title" class="hidden">Choose a Category</h2>
+
+    <!-- Main Menu -->
+    <div id="main-menu" class="menu">
+      <div class="menu-block" onclick="showSection('learn-section')"><b>LEARN</b></div>
+      <div class="menu-block" onclick="showSection('game-section')"><b>GAMES</b></div>
+    </div>
+
+    <!-- Categories under LEARN -->
+    <div id="learn-section" class="submenu hidden">
+      <button class="close-btn" onclick="goBack()">✖</button>
+      <div class="submenu-block" onclick="goToLearn('../COLORS/colors3_index.html')"><b>COLORS</b></div>
+      <div class="submenu-block" onclick="goToLearn('../ANIMALS/animals3_index.html')"><b>ANIMALS</b></div>
+
+      <!-- Coming soon: re-enable once these learn pages exist, and add an onclick to each
+      <div class="submenu-block"><b>FRUITS</b></div>
+      <div class="submenu-block"><b>SENTENCES</b></div>
+      -->
+    </div>
+
+    <!-- Game Categories -->
+    <div id="game-section" class="submenu hidden">
+      <button class="close-btn" onclick="goBack()">✖</button>
+      <div class="submenu-block" onclick="showSection('wordmatch-section')"><b>WORD MATCH</b></div>
+      <div class="submenu-block" onclick="goToGame('../SENTENCES/sentences2_index.html')"><b>SENTENCE ARRANGE</b></div>
+      <div class="submenu-block" onclick="showSection('name-object-section')"><b>NAME OBJECT IN PICTURE</b></div>
+    </div>
+
+    <!-- Topics in Word Match Game -->
+    <div id="wordmatch-section" class="submenu hidden">
+      <button class="close-btn" onclick="goBack()">✖</button>
+      <div class="submenu-block" onclick="goToGame('../COLORS/colors_index.html')"><b>COLORS</b></div>
+      <div class="submenu-block" onclick="goToGame('../FRUITS/fruits_index.html')"><b>FRUITS</b></div>
+      <div class="submenu-block" onclick="goToGame('../ANIMALS/animals_index.html')"><b>ANIMALS</b></div>
+    </div>
+
+    <!-- Topics in Naming Objects Game -->
+    <div id="name-object-section" class="submenu hidden">
+      <button class="close-btn" onclick="goBack()">✖</button>
+      <div class="submenu-block" onclick="goToGame('../COLORS/colors2_index.html')"><b>COLORS</b></div>
+      <div class="submenu-block" onclick="goToGame('../FRUITS/fruits2_index.html')"><b>FRUITS</b></div>
+      <div class="submenu-block" onclick="goToGame('../ANIMALS/animals2_index.html')"><b>ANIMALS</b></div>
+    </div>
+
+  </div>
+
+  <script src="homepage_script.js"></script>
+</body>
+</html>

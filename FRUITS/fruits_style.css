@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #fef7e4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.game-container {
+  text-align: center;
+  width: 90%;
+  max-width: 800px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.progress-container {
+  width: 100%;
+  background: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 15px;
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #4caf50, #81c784);
+  transition: width 0.4s ease;
+}
+
+h1 {
+  color: #444;
+  margin-bottom: 30px;
+}
+
+.game-area {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.words-container, .images-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.word-card {
+  background: #ffecb3;
+  border: 2px solid #ffd54f;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: grab;
+  font-size: 1.2em;
+  transition: transform 0.2s;
+}
+
+.word-card:active {
+  transform: scale(1.1);
+}
+
+.image-box {
+  width: 120px;
+  height: 120px;
+  border: 2px dashed #ccc;
+  border-radius: 10px;
+  background-color: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.image-box img {
+  width: 80%;
+  height: auto;
+  pointer-events: none;
+}
+
+.image-box.correct {
+  border-color: #4caf50;
+  background-color: #e8f5e9;
+}
+
+.image-box.incorrect {
+  border-color: #e53935;
+  background-color: #ffebee;
+}
+
+#next-btn {
+  padding: 12px 30px;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 10px;
+  background-color: #ccc;
+  color: #fff;
+  cursor: not-allowed;
+  transition: background 0.3s;
+}
+
+#next-btn.active {
+  background-color: #4caf50;
+  cursor: pointer;
+}
+.centered-btn {
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: #fb0000;
+}
+
+.close-btn:hover {
+  color: rgb(116, 0, 0);
+}
+
+.submenu {
+  position: relative;
+}
+
+

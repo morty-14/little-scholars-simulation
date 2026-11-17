@@ -1,0 +1,35 @@
+.color-row{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 8px 0;
+}
+
+.color-box{
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: #fb0000; 
+}
+
+.close-btn:hover {
+  color: rgb(116, 0, 0);
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f7f7;
+    text-align: center;
+    padding: 20px0;
+}
